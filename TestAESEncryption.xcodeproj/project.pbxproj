@@ -12,9 +12,12 @@
 		943146052098FAA5006B385C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943146032098FAA5006B385C /* Main.storyboard */; };
 		943146072098FAA5006B385C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943146062098FAA5006B385C /* Assets.xcassets */; };
 		9431460A2098FAA5006B385C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943146082098FAA5006B385C /* LaunchScreen.storyboard */; };
+		D6D3457BF3F729C0A0CE8248 /* Pods_TestAESEncryption.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D979AC506BEF2794790B8E /* Pods_TestAESEncryption.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B038768AC0D797FC2ECC8A /* Pods-TestAESEncryption.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAESEncryption.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAESEncryption/Pods-TestAESEncryption.release.xcconfig"; sourceTree = "<group>"; };
+		12D979AC506BEF2794790B8E /* Pods_TestAESEncryption.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAESEncryption.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943145FC2098FAA5006B385C /* TestAESEncryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAESEncryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		943145FF2098FAA5006B385C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		943146012098FAA5006B385C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		943146062098FAA5006B385C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		943146092098FAA5006B385C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9431460B2098FAA5006B385C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC300FD25A2531E58E2D490 /* Pods-TestAESEncryption.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAESEncryption.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAESEncryption/Pods-TestAESEncryption.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D3457BF3F729C0A0CE8248 /* Pods_TestAESEncryption.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DC18DB167BA2E79B7E9B990 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12D979AC506BEF2794790B8E /* Pods_TestAESEncryption.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		943145F32098FAA5006B385C = {
 			isa = PBXGroup;
 			children = (
 				943145FE2098FAA5006B385C /* TestAESEncryption */,
 				943145FD2098FAA5006B385C /* Products */,
+				C30CBE1BB57B245214994F10 /* Pods */,
+				8DC18DB167BA2E79B7E9B990 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = TestAESEncryption;
 			sourceTree = "<group>";
 		};
+		C30CBE1BB57B245214994F10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACC300FD25A2531E58E2D490 /* Pods-TestAESEncryption.debug.xcconfig */,
+				00B038768AC0D797FC2ECC8A /* Pods-TestAESEncryption.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9431460E2098FAA5006B385C /* Build configuration list for PBXNativeTarget "TestAESEncryption" */;
 			buildPhases = (
+				57E467AF2AF5E2CCD1FB0E8B /* [CP] Check Pods Manifest.lock */,
 				943145F82098FAA5006B385C /* Sources */,
 				943145F92098FAA5006B385C /* Frameworks */,
 				943145FA2098FAA5006B385C /* Resources */,
+				925A606ED9E077978D61EDEA /* [CP] Embed Pods Frameworks */,
+				9F18199759EA0B6C36522562 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57E467AF2AF5E2CCD1FB0E8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestAESEncryption-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		925A606ED9E077978D61EDEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestAESEncryption/Pods-TestAESEncryption-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestAESEncryption/Pods-TestAESEncryption-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F18199759EA0B6C36522562 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestAESEncryption/Pods-TestAESEncryption-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		943145F82098FAA5006B385C /* Sources */ = {
@@ -272,6 +357,7 @@
 		};
 		9431460F2098FAA5006B385C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACC300FD25A2531E58E2D490 /* Pods-TestAESEncryption.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +372,7 @@
 		};
 		943146102098FAA5006B385C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B038768AC0D797FC2ECC8A /* Pods-TestAESEncryption.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

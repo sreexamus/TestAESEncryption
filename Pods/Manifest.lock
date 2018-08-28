@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.6.0)
+  - CryptoSwift (0.8.3)
+  - RNCryptor (5.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - CryptoSwift
+  - RNCryptor (~> 5.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  CryptoSwift: 033efc3523865d19cc6ab6612fa17a62613b5dfa
+  RNCryptor: 59b9f92e9fa8a1af74c32dc6b1af5e30ff5e1b64
+
+PODFILE CHECKSUM: d3a35c89705e9aab4f7e60fb3d8fbf0d02866680
+
+COCOAPODS: 1.4.0
